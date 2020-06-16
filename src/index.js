@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { ThemeProvider } from 'styled-components';
+import WebFont from 'webfontloader';
+import Weather from './pages/Weather/Weather';
+import { GlobalStyle } from './assets/styles/global';
+import { theme } from './assets/styles/theme';
 import * as serviceWorker from './serviceWorker';
+
+WebFont.load({
+  google: {
+    families: ['Roboto:300,400,400i,600,700,700i&display=optional'],
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Weather />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
