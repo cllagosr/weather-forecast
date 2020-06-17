@@ -13,7 +13,7 @@ export const colors = {
   gray: '#999999',
   background: '#262a5a',
   font: '#fff',
-  textSecondary: '#a8aabd',
+  fontSecondary: '#a8aabd',
 };
 
 export const spaces = {
@@ -21,7 +21,7 @@ export const spaces = {
   sm: '8px',
   md: '12px',
   lg: '24px',
-  xl: '32px',
+  xl: '36px',
 };
 
 export const media = Object.keys(screenSizes).reduce((acc, label) => {

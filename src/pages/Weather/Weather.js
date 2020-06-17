@@ -1,13 +1,8 @@
 import React from 'react';
+import List from '../../components/List/List';
 
 const Weather = () => {
-  return (
-    <div>
-      Normal
-      <b>Bold</b>
-      <i>Italic</i>
-    </div>
-  );
+  return <List />;
 };
 
 export default Weather;
