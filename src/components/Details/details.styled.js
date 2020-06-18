@@ -51,7 +51,7 @@ export const DatePlace = styled.div`
   align-items: center;
 
   ${({ theme }) => theme.media.md`
-    align-items: star;
+    align-items: start;
   `}
 
   div:nth-child(1) {
