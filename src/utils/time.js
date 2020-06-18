@@ -5,8 +5,8 @@ const getDayOfWeek = (date) => {
   return days[dayNumber];
 };
 
-const getHour = (date) => {
-  const hours = date.getHours();
+export const addHours = (date, hoursToAdd = 0) => {
+  const hours = date.getHours() + hoursToAdd;
   return hours < 12 ? `0${hours}:00` : `${hours}:00`;
 };
 
@@ -19,6 +19,6 @@ const getDate = (date) => {
 
 export const getParsedDate = (date) => ({
   day: getDayOfWeek(date),
-  hour: getHour(date),
+  hour: addHours(date),
   date: getDate(date),
 });

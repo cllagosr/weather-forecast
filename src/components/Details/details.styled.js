@@ -42,6 +42,7 @@ export const TempValue = styled.div`
   font-weight: bold;
   ${({ theme }) => theme.media.md`
     font-size: 15vw;
+    line-height: 15vw;
   `}
 `;
 

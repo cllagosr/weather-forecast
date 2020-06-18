@@ -6,6 +6,7 @@ export const CardWrapper = styled.section`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  background: ${({ isActive }) => (isActive ? '#51557a' : 'transparent')};
 
   ${({ theme }) => theme.media.md`
     flex-direction: column;
@@ -13,6 +14,10 @@ export const CardWrapper = styled.section`
     padding: ${({ theme }) => theme.spaces.sm} ${({ theme }) =>
     theme.spaces.xl};
   `}
+
+  :hover {
+    background-color: #51557a;
+  }
 `;
 
 export const Time = styled.div`
