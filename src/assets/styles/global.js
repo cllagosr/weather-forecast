@@ -16,10 +16,11 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Jaldi', sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-size: 16px;
+    font-size: 47px;
     font-weight: 400;
     color: ${({ theme }) => theme.colors.font};
     background-color: ${({ theme }) => theme.colors.background};
+    margin: 0;
   }
 
   h1 {

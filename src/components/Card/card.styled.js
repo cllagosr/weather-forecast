@@ -19,7 +19,7 @@ export const Time = styled.div`
   font-size: 30px;
   color: ${({ theme }) => theme.colors.fontSecondary};
   ${({ theme }) => theme.media.md`
-    font-size: 47px;
+    font-size: unset;
   `}
 `;
 
