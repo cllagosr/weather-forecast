@@ -9,9 +9,9 @@ export const screenSizes = {
 };
 
 export const colors = {
-  primary: '#ffc700',
   gray: '#999999',
   background: '#262a5a',
+  lightBackground: '#51557a',
   font: '#fff',
   fontSecondary: '#a8aabd',
 };

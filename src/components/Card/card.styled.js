@@ -6,7 +6,8 @@ export const CardWrapper = styled.section`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background: ${({ isActive }) => (isActive ? '#51557a' : 'transparent')};
+  background: ${({ isActive, theme }) =>
+    isActive ? theme.colors.lightBackground : 'transparent'};
 
   ${({ theme }) => theme.media.md`
     flex-direction: column;
@@ -16,7 +17,7 @@ export const CardWrapper = styled.section`
   `}
 
   :hover {
-    background-color: #51557a;
+    background-color: ${({ theme }) => theme.colors.lightBackground};
   }
 `;
 

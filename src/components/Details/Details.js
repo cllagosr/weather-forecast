@@ -11,14 +11,14 @@ const Details = ({
       <S.Image>
         <use xlinkHref={`${sprite}#${cloudIcon}`} />
       </S.Image>
-      <S.Temperature>
+      <S.Temperature data-testid="temperature">
         <div>
           <span>{cloudLabel}</span>
           <span>{maxMin}</span>
         </div>
         <S.TempValue>{temperature}</S.TempValue>
       </S.Temperature>
-      <S.DatePlace>
+      <S.DatePlace data-testid="datePlace">
         <div>Munich,</div>
         <div>{day}</div>
         <div>{date}</div>

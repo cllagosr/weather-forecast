@@ -13,7 +13,7 @@ const List = ({ data, indexActive, onCardClick }) => {
               isActive={indexActive === i}
               handleOnClick={onCardClick}
               key={i}
-              icon={forecast.cloudIcon}
+              cloudIcon={forecast.cloudIcon}
               index={i}
               hour={forecast.hour}
               temperature={forecast.temperature}

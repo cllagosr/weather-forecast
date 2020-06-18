@@ -3,15 +3,22 @@ import PropTypes from 'prop-types';
 import sprite from '../../assets/img/sprite.svg';
 import * as S from './card.styled';
 
-const Card = ({ index, isActive, handleOnClick, icon, hour, temperature }) => {
+const Card = ({
+  index,
+  isActive,
+  handleOnClick,
+  cloudIcon,
+  hour,
+  temperature,
+}) => {
   const onClick = () => {
     handleOnClick(index);
   };
   return (
-    <S.CardWrapper onClick={onClick} isActive={isActive}>
+    <S.CardWrapper data-testid="card" onClick={onClick} isActive={isActive}>
       <S.Time>{hour}</S.Time>
-      <S.Image>
-        <use xlinkHref={`${sprite}#${icon}`} />
+      <S.Image data-testid="icon">
+        <use xlinkHref={`${sprite}#${cloudIcon}`} />
       </S.Image>
       <S.Temperature>{temperature}</S.Temperature>
     </S.CardWrapper>
@@ -20,7 +27,7 @@ const Card = ({ index, isActive, handleOnClick, icon, hour, temperature }) => {
 
 Card.propTypes = {
   isActive: PropTypes.bool.isRequired,
-  icon: PropTypes.string.isRequired,
+  cloudIcon: PropTypes.string.isRequired,
   hour: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
   temperature: PropTypes.string.isRequired,
