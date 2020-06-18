@@ -1,4 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Weather forecast
+
+To run the app, add a valid api key for *openweathermap* api to your `.env.local` file and run `yarn install` if it's your first time.
+
+This proyect uses `prop-types`, `styled-components`. For unit tests `react-testing-library`.
+
+It automatically format the code before every commit using prettier and eslint, so you don't have to worry about style during development.
+
+The proyect has four components:
+Card: which renders the time, icon and temperature. It recives all the data via props plus a `handleOnClick` event and `isActive` to change the background of the "active" card.
+
+List: It receives a list of items and iterates this array to render the cards.
+
+Details: Renders the details of the selected card: weather, place and time data.
+
+Weather: It wrapps everything and calls the api through `fetchWeather` which returns all the data ready to use, to accomplish that, `fetchWeather` uses some utils available in `weather.js` and `time.js` to parse data.
+Weather also handles the active card and the data shown in Details as well as loading and failed state from the api call.
 
 ## Available Scripts
 
