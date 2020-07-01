@@ -1,5 +1,9 @@
 ## Weather forecast
 
+![weather forecast](https://user-images.githubusercontent.com/6945816/86270573-bc4adf00-bbcb-11ea-9065-903ca639f474.png)
+
+This app shows the weather forecast for today using *openweathermap* api. 
+
 To run the app, add a valid api key for *openweathermap* api to your `.env.local` file and run `yarn install` if it's your first time.
 
 This proyect uses `prop-types`, `styled-components`. For unit tests `react-testing-library`.
